@@ -8,6 +8,7 @@ module AttachScreenshotPlugin
     base.send(:include, InstanceMethods)
 
     base.class_eval do
+      unloadable
       alias_method_chain :logout, :cleanup
     end
   end
