@@ -1,0 +1,10 @@
+ru:
+  label_screenshots: Скриншоты
+  label_add_another_screenshot: Добавить еще один скриншот
+  label_button_paste: Вставить скриншот из буфера обмена
+  label_image: Скриншот
+  button_attach: Добавить
+  error_close_msg: Невозможно закрыть аплет, {0}
+  error_close_title: Ошибка
+  error_attach_msg: Ошибка, {0}
+  error_attach_title: Ошибка при загрузке

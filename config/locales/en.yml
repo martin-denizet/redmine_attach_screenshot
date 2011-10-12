@@ -1,0 +1,10 @@
+en:
+  label_screenshots: Screenshots
+  label_add_another_screenshot: Add another screenshot
+  label_button_paste: Paste image from clipboard
+  label_image: Screenshot
+  button_attach: Attach
+  error_close_msg: Can not close applet, {0}
+  error_close_title: Error
+  error_attach_msg: Error, {0}
+  error_attach_title: Attaching error

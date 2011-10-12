@@ -1,0 +1,30 @@
+#screenshots_fields input[type=text] {margin-left: 8px; }
+img.scr_attach_icon {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid grey;
+}
+span.screen_thumb {
+  display: block;
+  position: relative;
+  float: left;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 3px;
+}
+span.screen_thumb .st1 {
+  display: table-cell;
+  position: relative;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  vertical-align: middle;
+}
+span.screen_thumb .st1 im {
+  vertical-align: middle;
+}
+span.screen_thumb .st2 {
+  width: 160px;
+  display: block;
+  text-align: center;
+}
