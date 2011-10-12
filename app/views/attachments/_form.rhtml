@@ -3,7 +3,7 @@
     <%= javascript_include_tag 'attach_screenshot', :plugin => 'redmine_attach_screenshot' %>
 <% end %>
 <span id="attachments_fields">
-<%= file_field_tag 'attachments[1][file]', :size => 30, :id => nil  -%><label class="inline"><span id="attachment_description_label_content"><%= l(:label_optional_description) %></span><%= text_field_tag 'attachments[1][description]', '', :size => 60, :id => nil %>
+<%= file_field_tag 'attachments[1][file]', :size => 30, :id => nil, :title => l(:label_attachment_description) %><label class="inline"><span id="attachment_description_label_content"><%= l(:label_optional_description) %></span><%= text_field_tag 'attachments[1][description]', '', :size => 60, :id => nil %>
 </label>
 </span>
 <br />
@@ -24,7 +24,7 @@
 <% end %>
 <span id="attach_applet" style="display: none; position: fixed; top: 50px; left: 10px; border: solid 1px #BBB;"></span>
 <span id="screenshots_fields">
-<%= submit_tag l(:button_add), :onclick => 'showAttachScreen(); return false;'%>
+<%= submit_tag l(:button_add), :type => 'button', :value => l(:label_add_screenshot), :onclick => 'showAttachScreen(); return false;'%>
 </span>
 <small><%= l(:label_max_size) %>: <%= number_to_human_size(Setting.attachment_max_size.to_i.kilobytes) %>
 </small>
@@ -63,16 +63,19 @@
 
         var b = document.createElement("input");
         b.type = "image";
+        b.title = "<%=  l(:label_delete_screenshot) %>";
         b.src = "<%= url_for(:only_path => false, :controller => 'welcome')%>images/delete.png"
         b.setAttribute("onClick", "deleteAttachScreen('" + fileId + "'); return false;");
 
         var i = document.createElement("input");
 	    i.type = "image";
+            i.title = "<%= l(:label_insert_screenshot) %>"
 	    i.src = "<%= url_for(:only_path => false, :controller => 'welcome')%>images/lightning.png";
 	    i.setAttribute("onClick", "addLinkToAttachScreen('" + fileId + "'); return false;");
 
         var d = document.createElement("input");
         d.name = "screenshots[" + fileId + "][description]";
+        d.title = "<%= l(:label_attachment_description) %>"
         d.type = "text";
         d.size = 15;
 

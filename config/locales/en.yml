@@ -1,6 +1,10 @@
 en:
   label_screenshots: Screenshots
   label_add_another_screenshot: Add another screenshot
+  label_add_screenshot: Add screenshot
+  label_delete_screenshot: Delete screenshot
+  label_insert_screenshot: Insert screenshot
+  label_attachment_description: Attachment desciption
   label_button_paste: Paste image from clipboard
   label_image: Screenshot
   button_attach: Attach
