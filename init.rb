@@ -7,9 +7,9 @@ require_dependency 'attachment_hook'
 
 Redmine::Plugin.register :redmine_attach_screenshot do
   name 'Redmine Attach Screenshot plugin'
-  author 'Konstantin Zaitsev, Sergei Vasiliev, Alexandr Poplavsky, Jens Alfke'
+  author 'Konstantin Zaitsev, Sergei Vasiliev, Alexandr Poplavsky, Jens Alfke, modified by Martin Denizet'
   description 'Attach screenshots from clipboard directly to a Redmine issue'
-  version '0.1.0'
+  version '0.1.1-mdfork'
   Dispatcher.to_prepare do
     ApplicationController.send(:include, AttachScreenshotPlugin::ApplicationControllerPatch)
     AccountController.send(:include, AttachScreenshotPlugin::CleanupTmp)

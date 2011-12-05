@@ -8,3 +8,5 @@ Credits:
 Authors: Konstantin Zaitcev (kos@axmor.com), Sergei Vasilyev (vsv@axmor.com), Alexandr Poplavsky (poplavsky@axmor.com),
 Inspired by Atlassian JIRA (http://www.atlassian.com/software/jira)
 Work sponsored by Axmor Software (http://www.axmor.com)
+
+Modified by Martin Denizet.
