@@ -1,3 +1,8 @@
+Version 0.1.3 - 2012/02/7
+--------------------------
+
+* Bugfix:Redmine 1.3.x Cannot attach multiple files (JS error).
+
 Version 0.1.2 - 2012/01/13
 --------------------------
 
