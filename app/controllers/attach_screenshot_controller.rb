@@ -33,6 +33,6 @@ class AttachScreenshotController < ApplicationController
   private
 
   def make_tmpname(date, name = "screenshot.png")
-    sprintf('%d_%d%s', User.current.id, date, name)
+    sprintf('%d_%s%s', User.current.id, date, name)
   end
 end

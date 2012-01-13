@@ -1,0 +1,4 @@
+Version 0.1.2 - 2012/01/13
+--------------------------
+
+* Bugfix:A date starting with a 0 is converted as integer to form the temporary name makes a 500 error.
