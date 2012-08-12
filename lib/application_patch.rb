@@ -1,5 +1,4 @@
-require 'account_controller'
-require 'ftools'
+require 'application_controller'
 
 module AttachScreenshotPlugin
   module ApplicationControllerPatch
@@ -19,6 +18,6 @@ module AttachScreenshotPlugin
           find_current_user_without_screenshot
         end
       end
-    end    
+    end
   end
 end
