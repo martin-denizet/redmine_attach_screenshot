@@ -11,8 +11,9 @@ Redmine::Plugin.register :redmine_attach_screenshot do
   author_url 'https://github.com/martin-denizet'
   description 'Attach screenshots from clipboard directly to a Redmine issue'
   version '0.1.4'
-  Dispatcher.to_prepare do
-    ApplicationController.send(:include, AttachScreenshotPlugin::ApplicationControllerPatch)
-    AccountController.send(:include, AttachScreenshotPlugin::CleanupTmp)
-  end
+end
+
+Dispatcher.to_prepare do
+  ApplicationController.send(:include, AttachScreenshotPlugin::ApplicationControllerPatch)
+  AccountController.send(:include, AttachScreenshotPlugin::CleanupTmp)
 end
